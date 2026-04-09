@@ -1,0 +1,13 @@
+name: schedule job
+
+on: 
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  first-shedule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Scheduled job executed"
